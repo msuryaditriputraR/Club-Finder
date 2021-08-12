@@ -5,9 +5,9 @@ class ClubItem extends HTMLElement {
     }
 
     set club(club) {
-        this._fanArt = club.fanArt;
-        this._name = club.name;
-        this._description = club.description;
+        this._fanArt = club.strTeamBadge;
+        this._name = club.strTeam;
+        this._description = club.strDescriptionEN;
         this.render();
     }
 
